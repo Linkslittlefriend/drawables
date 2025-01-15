@@ -2,24 +2,21 @@
 
 function drawCanvas(){
     for(i=0;i<4;i++){
-        topdiv.setattribute("id","div " + i);
-        for(j=0;j<4;j++){
-            topdiv.setattribute("id","subdiv " + i);
-            topdiv.appendChild(subdiv);
-        }
+        console.log(i);
+        const topdiv = document.createElement("div");
         canvas.appendChild(topdiv);
+        topdiv.setAttribute("id","div " + i);
+        topdiv.classList.add("topdiv");
+        for(j=0;j<4;j++){
+            console.log("j here: " + j);
+            const subdiv = document.createElement("div")
+            topdiv.appendChild(subdiv);
+            subdiv.setAttribute("id","subdiv " + i);
+            subdiv.classList.add("subdiv");
+        }
     }
-
 }
 
 const canvas = document.querySelector(".container");
-const topdiv = document.createElement("div");
-const subdiv = document.createElement("div");
-
-div.classList.add("topdiv");
-div.textContent = "topkek here.";
-
-div.classList.add("subdiv");
-div.textContent = "subkek here.";
 
 drawCanvas();

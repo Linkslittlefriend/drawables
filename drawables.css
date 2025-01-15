@@ -1,0 +1,34 @@
+* {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding-top: 10em;
+}
+
+.topdiv {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.subdiv {
+    padding: 5em;
+    border: 1px solid;
+    transition: 0.08s ease-in-out;
+}
+
+.subdiv:hover {
+    background-color: aquamarine;
+}
