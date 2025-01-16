@@ -6,29 +6,65 @@
 
 body {
     display: flex;
+    align-items: center;
     justify-content: center;
+    flex-direction: column;
+    padding: 2em;
+    gap: 2em;
+    background-color: aliceblue;
+}
+
+/* animation properties */
+
+.subdiv, #drawbtn {
+    transition: 0.08s ease-in-out;
+}
+
+/* /// */
+
+#drawbtn {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: #DDDD30;
+    background-color: paleturquoise;
+    text-shadow: 1px 1px 2px #FF6F00;
+    font-family: 'Berlin Sans FB';
+    border: 2px solid;
+    border-radius: 2em;
+    padding: 0.5em;
+}
+
+#drawbtn:hover {
+    background-color: turquoise;
+    color:yellow;
 }
 
 .container {
     display: flex;
+    box-shadow: -0.5em 2em #69B4FF
+    ,1.5em -0.5em #79D4FF;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    padding-top: 10em;
+    border: 2px solid hotpink;
+    width: 30vw;
+    height: 30vw;
 }
 
 .topdiv {
     display:flex;
     flex-direction: column;
+    flex-grow: 1;
+    height: 100%;
     justify-content: center;
 }
 
 .subdiv {
-    padding: 5em;
+    display:flex;
+    color: paleturquoise;
     border: 1px solid;
-    transition: 0.08s ease-in-out;
-}
-
-.subdiv:hover {
-    background-color: aquamarine;
+    border-width: 0.2px;
+    height: 100%;
+    width: auto;
 }

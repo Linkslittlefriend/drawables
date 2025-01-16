@@ -1,3 +1,6 @@
 first generate 4 divs with a unique class.
 
 after the generated divs, make it so each div with a class will have 4 divs added to it.
+
+adjust css to be fixed to a specific max width and height.
+use flex-shrink to maintain that size.
